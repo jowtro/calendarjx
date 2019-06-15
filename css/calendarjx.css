@@ -1,0 +1,166 @@
+/**
+@AUTHOR JONNAS SCHLOTTFELDT
+@DATE 2019-06-19
+@COMMENTS
+Tested on FIREFOX QUANTUM 67.0.1 (64-bits) only. (sorry)
+There are a lot of refactory to do , and failsafe testing but I've spent enough time with this litle app, it's time to move on.
+maybe a reliable version will be availble in my github soon.
+**/
+
+.contentsx {
+  width: 70%;
+  font-family: arial;
+}
+
+.calendarX {
+  width: 77%;
+  float: left;
+  padding: 0;
+}
+
+.calendarXHeader {
+  border-top: 5px solid #ffdc5e;
+  position: relative;
+  padding: 2.6%;
+  border-bottom: 1px solid #000;
+  height: 15%;
+  background-color: #fff;
+  color: rgb(0, 80, 209);
+  font-size: 1.6em;
+}
+
+.calendarXHeader a:hover {
+  text-decoration: none !important;
+  color: #fff;
+  background-color: rgb(42, 110, 227);
+}
+
+.calendarXLowerHeader {
+  position: relative;
+  border-bottom: 1px solid #000;
+  background-color: #fff;
+  color: red;
+}
+
+.calendarXBody {
+  width: 102%;
+  margin: 0;
+  padding: 0;
+}
+
+.days {
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  width: 14%;
+  height: 98px;
+  float: left;
+}
+
+.days:hover {
+  background-color: rgb(142, 199, 251);
+}
+
+.weekend {
+  background-color: lightgray;
+}
+
+.weekdays {
+  font-size: 16px;
+  margin: 0;
+  padding: 10px 0;
+  color: red;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+.month {
+  margin-left: 15%;
+  display: inline;
+  width: 130px;
+}
+
+.today {
+  font-size: 0.7em;
+  border-radius: 5%;
+  margin-left: 5%;
+  text-align: center;
+  background-color: rgb(42, 138, 227);
+  width: 10%;
+  display: inline-block;
+  color: #FFF;
+}
+
+.currentDay{
+  background-color: lightyellow !important;
+}
+.currentDay:hover{
+  background-color: rgb(142, 199, 251) !important;
+}
+.forward {
+  text-align: center;
+  margin-left: 2%;
+  background-color: rgb(42, 138, 227);
+  width: 5%;
+  display: inline-block;
+  color: #FFF;
+}
+
+.previous {
+  text-align: center;
+  background-color: rgb(42, 138, 227);
+  width: 5%;
+  display: inline-block;
+  color: #FFF;
+}
+
+.round {
+  text-decoration: none !important;
+  border-radius: 10%;
+}
+.eventbar:hover{
+  background-color:red;
+}
+.eventbar{
+  font-weight: bold;
+  font-size: 10pt;
+  margin-top: 2%;
+  border-radius: 5%;
+  height:25%;
+  width: auto;
+  background-color: rgb(42, 138, 227);
+  color:white;
+}
+.moreEvents{
+  font-weight: bold;
+  font-size: 10pt;
+}
+#txtTimeOfDay {
+  width: 60px;
+}
+
+#dialogAppointment {
+  display: block;
+  margin-left: 5%;
+  padding: 1%;
+  width: 180px;
+  height: 180px;
+  border: 5px solid #ccd;
+  background-color: #ccc;
+  display: block;
+  float: left;
+}
+
+#dialogAppointment input {
+  margin-top: 2%;
+}
+
+#dialogAppointment textarea {
+  margin-top: 2%;
+}
